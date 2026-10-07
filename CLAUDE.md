@@ -42,6 +42,7 @@ CprE 487/587 Lab 1 (TensorFlow로 Tiny ImageNet CNN 추론·프로파일링·학
 
 - `CprE487_587_Lab1.pdf` — instruction.
 - `CprE_487_587_Lab1_Template.ipynb` — 새 실험 노트북. 2026-10-07 기준 3.3–3.7의 필수 항목(노란색 강조)을 모두 실행·통과했다. 남은 것: Above & Beyond(선택), 보고서 작성, 제출물 패키징(PDF §5: `lab1_report_06.pdf`, `lab1_notebook_06.pdf`, `.ipynb`, `lab1_binaries_06/`).
+- `submission/` — 제출물 사본(PDF §5 이름 규칙, 조 번호 06). 노트북이나 바이너리를 바꾸면 다시 복사해야 한다. `README.md`의 수치도 노트북 출력에서 온 것이라 함께 갱신한다.
 - `previous_lab_data/` — 이전 제출본. `CprE_487_587_Lab1_Template(1).ipynb`가 그때의 최종본(커밋 `bb91cf2`, 출력 포함)이고, `(1)` 없는 쪽은 더 오래된 버전이다.
 
 노트북 섹션 순서는 PDF와 같다: Tools Setup → Dataset Inspection(3.3) → Model Loading and Inference(3.4) → Model Exploration(3.5) → Tensorboard 프로파일링 → Training → Above and Beyond. 셀들은 위에서 아래로 상태를 공유하므로(`model`, 데이터셋, `callbacks` 등) 한 셀을 고칠 때는 그 변수를 쓰는 뒤쪽 셀도 확인한다.
