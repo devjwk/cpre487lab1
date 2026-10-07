@@ -3,15 +3,15 @@ wnids.txt
 words.txt
 
 lab1_venv/
-img_data/
+/img_data/
 
 CNN_TinyImageNet.h5
 
 
 # Profiler traces and TensorBoard logs (large, regenerated on every run)
-log_data/
+/log_data/
 
 # Training logs and checkpoints
-train_data/
+/train_data/
 
 .ipynb_checkpoints/
