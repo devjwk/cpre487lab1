@@ -29,13 +29,20 @@ CprE 487/587 Lab 1 (TensorFlow로 Tiny ImageNet CNN 추론·프로파일링·학
 - venv: `source lab1_venv/bin/activate` — Python 3.9.25, tensorflow 2.16.2 (PDF 3.2와 일치 확인됨, 2026-10-07)
 - `tiny_imagenet` 모듈은 venv에 pip로 설치되어 있고, `CNN_TinyImageNet.h5`·`wnids.txt`·`words.txt`는 랩 머신 디렉터리에만 있다 (`.gitignore` 대상).
 
+노트북은 두 번의 커널 세션으로 실행했고, 다시 돌릴 때도 이 구분을 지킨다:
+
+- **3.3–3.6 (추론·프로파일링)**: 랩 머신(`linuxvdi`)의 VSCode, `ENABLE_GPU = False` (CPU).
+- **3.7 (학습)**: GPU VM `cpre587-f26-06` (홈 폴더 공유, 같은 경로·같은 venv). `ssh -L 5050:localhost:5050 ...` → `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64` → `jupyter notebook --no-browser --port 5050`, `ENABLE_GPU = True`로 바꾸고 import·dataset·`# Setup for profiling`·Training 셀만 실행한다. Run All 금지 — 프로파일링이 다시 돌면 3.6 수치가 바뀐다. 끝나면 Jupyter를 종료해 GPU 메모리를 비운다.
+- 층별 지연시간 셀의 숫자는 TensorBoard `framework_op_stats`(PDF의 `tensorflow_stats`) 화면에서 읽어 넣은 값이다. 프로파일링 셀을 다시 실행하면 이 값들도 다시 읽어 갱신해야 한다.
+- 홈 폴더가 공유라 노트북을 두 곳에서 동시에 열면 저장 충돌이 난다. pull 전에는 노트북 탭을 닫는다.
+
 따라서 빌드/린트/테스트 명령은 없다. 출력을 지어내지 말고, 판정은 사용자가 붙여 준 실제 출력이나 노트북에 저장된 출력만 근거로 한다.
 
 ## 구조
 
-- `CprE487_587_Lab1.pdf` — instruction. 3.1–3.2(환경)는 통과, 3.3 Dataset Inspection부터 진행한다.
+- `CprE487_587_Lab1.pdf` — instruction.
+- `CprE_487_587_Lab1_Template.ipynb` — 새 실험 노트북. 2026-10-07 기준 3.3–3.7의 필수 항목(노란색 강조)을 모두 실행·통과했다. 남은 것: Above & Beyond(선택), 보고서 작성, 제출물 패키징(PDF §5: `lab1_report_06.pdf`, `lab1_notebook_06.pdf`, `.ipynb`, `lab1_binaries_06/`).
 - `previous_lab_data/` — 이전 제출본. `CprE_487_587_Lab1_Template(1).ipynb`가 그때의 최종본(커밋 `bb91cf2`, 출력 포함)이고, `(1)` 없는 쪽은 더 오래된 버전이다.
-- 새 실험 노트북은 저장소 루트에 둔다.
 
 노트북 섹션 순서는 PDF와 같다: Tools Setup → Dataset Inspection(3.3) → Model Loading and Inference(3.4) → Model Exploration(3.5) → Tensorboard 프로파일링 → Training → Above and Beyond. 셀들은 위에서 아래로 상태를 공유하므로(`model`, 데이터셋, `callbacks` 등) 한 셀을 고칠 때는 그 변수를 쓰는 뒤쪽 셀도 확인한다.
 
