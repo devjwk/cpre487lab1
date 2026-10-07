@@ -10,3 +10,6 @@ CNN_TinyImageNet.h5
 
 # Profiler traces and TensorBoard logs (large, regenerated on every run)
 log_data/
+
+# Training logs and checkpoints
+train_data/
