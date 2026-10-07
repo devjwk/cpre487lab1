@@ -38,23 +38,13 @@ Labs 2–5 reimplement this network in C++, quantize it, and move its arithmetic
 
 ## Where this lab fits
 
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#0F766E", "primaryTextColor": "#ffffff", "primaryBorderColor": "#042F2E", "lineColor": "#94A3B8", "secondaryColor": "#0F766E", "tertiaryColor": "#042F2E", "clusterBkg": "#F8FAFC", "clusterBorder": "#94A3B8", "edgeLabelBackground": "#F1F5F9", "fontFamily": "ui-sans-serif, system-ui, sans-serif"}}}%%
-flowchart LR
-    L1["Lab 1 · Train in TensorFlow"] --> L2["Lab 2 · C++ framework"] --> L3["Lab 3 · MAC units"] --> L4["Lab 4 · Quantization"] --> L5["Lab 5 · Hardware integration"]
-    style L1 fill:#5EEAD4,color:#0B1220,stroke:#042F2E
-```
+<img src="assets/lab_flow.svg" alt="Lab 1 · Train in TensorFlow → Lab 2 · C++ framework → Lab 3 · MAC units → Lab 4 · Quantization → Lab 5 · Hardware integration" width="100%">
 
 ## The model
 
 Six 5×5 / 3×3 convolutions, three max-pools and two dense layers: 770,216 parameters, 2.94 MB as float32, 131.6 M multiply-accumulates (MACs) per image. Input is a 64 × 64 RGB image stored as `uint8` (12,288 bytes).
 
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {"primaryColor": "#0F766E", "primaryTextColor": "#ffffff", "primaryBorderColor": "#042F2E", "lineColor": "#94A3B8", "secondaryColor": "#0F766E", "tertiaryColor": "#042F2E", "clusterBkg": "#F8FAFC", "clusterBorder": "#94A3B8", "edgeLabelBackground": "#F1F5F9", "fontFamily": "ui-sans-serif, system-ui, sans-serif"}}}%%
-flowchart LR
-    I["64×64×3"] --> A["conv2d · conv2d_1<br/>5×5, 32"] --> P1["pool"] --> B["conv2d_2 · conv2d_3<br/>3×3, 64"] --> P2["pool"] --> C["conv2d_4 · conv2d_5<br/>3×3, 64 / 128"] --> P3["pool"] --> D["dense 256"] --> O["dense_1 200<br/>softmax"]
-    style A fill:#5EEAD4,color:#0B1220,stroke:#042F2E
-```
+<img src="assets/model.svg" alt="input 64×64×3 → conv2d · conv2d_1 (5×5, 32) → pool → conv2d_2 · conv2d_3 (3×3, 64) → pool → conv2d_4 · conv2d_5 (3×3, 64/128) → pool → dense 256 → dense_1 200 softmax" width="100%">
 
 ## Results
 

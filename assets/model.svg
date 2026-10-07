@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 96" role="img" aria-label="Model: 64x64x3 input, conv2d and conv2d_1, pool, conv2d_2 and conv2d_3, pool, conv2d_4 and conv2d_5, pool, dense 256, dense_1 200 softmax">
+<title>Model: 64x64x3 input, conv2d and conv2d_1, pool, conv2d_2 and conv2d_3, pool, conv2d_4 and conv2d_5, pool, dense 256, dense_1 200 softmax</title>
+<style>.a{font:700 14px ui-sans-serif,system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}.b{font:500 12.5px ui-sans-serif,system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}</style>
+<defs><marker id="h" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#94A3B8"/></marker></defs>
+<rect x="11.0" y="14" width="92" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="57.0" y="44.0" text-anchor="middle" class="a" fill="#ffffff">input</text>
+<text x="57.0" y="64.0" text-anchor="middle" class="b" fill="#ffffff">64×64×3</text>
+<line x1="105.0" y1="48.0" x2="117.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="119.0" y="14" width="194" height="68" rx="10" fill="#5EEAD4" stroke="#042F2E" stroke-width="1.5"/>
+<text x="216.0" y="44.0" text-anchor="middle" class="a" fill="#0B1220">conv2d · conv2d_1</text>
+<text x="216.0" y="64.0" text-anchor="middle" class="b" fill="#0B1220">5×5, 32 filters</text>
+<line x1="315.0" y1="48.0" x2="327.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="329.0" y="14" width="60" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="359.0" y="53.0" text-anchor="middle" class="a" fill="#ffffff">pool</text>
+<line x1="391.0" y1="48.0" x2="403.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="405.0" y="14" width="194" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="502.0" y="44.0" text-anchor="middle" class="a" fill="#ffffff">conv2d_2 · conv2d_3</text>
+<text x="502.0" y="64.0" text-anchor="middle" class="b" fill="#ffffff">3×3, 64 filters</text>
+<line x1="601.0" y1="48.0" x2="613.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="615.0" y="14" width="60" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="645.0" y="53.0" text-anchor="middle" class="a" fill="#ffffff">pool</text>
+<line x1="677.0" y1="48.0" x2="689.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="691.0" y="14" width="194" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="788.0" y="44.0" text-anchor="middle" class="a" fill="#ffffff">conv2d_4 · conv2d_5</text>
+<text x="788.0" y="64.0" text-anchor="middle" class="b" fill="#ffffff">3×3, 64 / 128 filters</text>
+<line x1="887.0" y1="48.0" x2="899.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="901.0" y="14" width="60" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="931.0" y="53.0" text-anchor="middle" class="a" fill="#ffffff">pool</text>
+<line x1="963.0" y1="48.0" x2="975.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="977.0" y="14" width="92" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="1023.0" y="44.0" text-anchor="middle" class="a" fill="#ffffff">dense</text>
+<text x="1023.0" y="64.0" text-anchor="middle" class="b" fill="#ffffff">256</text>
+<line x1="1071.0" y1="48.0" x2="1083.0" y2="48.0" stroke="#94A3B8" stroke-width="2" marker-end="url(#h)"/>
+<rect x="1085.0" y="14" width="104" height="68" rx="10" fill="#0F766E" stroke="#042F2E" stroke-width="1.5"/>
+<text x="1137.0" y="44.0" text-anchor="middle" class="a" fill="#ffffff">dense_1</text>
+<text x="1137.0" y="64.0" text-anchor="middle" class="b" fill="#ffffff">200, softmax</text>
+</svg>
