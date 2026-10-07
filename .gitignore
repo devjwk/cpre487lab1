@@ -13,3 +13,5 @@ log_data/
 
 # Training logs and checkpoints
 train_data/
+
+.ipynb_checkpoints/
