@@ -2,7 +2,7 @@
 <title>TINYIMAGENET CNN BASELINE</title>
 <style>
 .kick{font:700 15px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:3px;fill:#5EEAD4}
-.title{font:800 52px system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1.5px;fill:#ffffff}
+.title{font:800 44px system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:1px;fill:#ffffff}
 .tag{font:500 21px system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;fill:#ffffff;opacity:.86}
 .mb{font:700 14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 .bar{fill:#5EEAD4}
@@ -11,8 +11,8 @@
 <rect width="1200" height="280" rx="20" fill="url(#g)"/>
 <rect class="bar" x="64" y="62" width="44" height="5" rx="2.5"/>
 <text x="64" y="100" class="kick">TENSORFLOW · KERAS · TENSORBOARD</text>
-<text x="64" y="158" class="title">TINYIMAGENET CNN BASELINE</text>
+<text x="64" y="154" class="title">TINYIMAGENET CNN BASELINE</text>
 <text x="64" y="196" class="tag">What does the model get right, and where does</text>
 <text x="64" y="224" class="tag">the inference time go?</text>
-<g transform="translate(830,71)"><text x="0" y="33" class="mb" fill="#fff">Top-1</text><rect x="70" y="14" width="236" height="26" rx="6" fill="#ffffff" opacity=".08"/><rect x="70" y="14" width="57.3" height="26" rx="6" fill="#2DD4BF"/><text x="0" y="75" class="mb" fill="#fff">Top-5</text><rect x="70" y="56" width="236" height="26" rx="6" fill="#ffffff" opacity=".08"/><rect x="70" y="56" width="116.6" height="26" rx="6" fill="#34D399"/><text x="0" y="117" class="mb" fill="#fff">Top-10</text><rect x="70" y="98" width="236" height="26" rx="6" fill="#ffffff" opacity=".08"/><rect x="70" y="98" width="145.7" height="26" rx="6" fill="#A3E635"/></g>
+<g transform="translate(858,71)"><text x="0" y="33" class="mb" fill="#fff">Top-1</text><rect x="70" y="14" width="236" height="26" rx="6" fill="#ffffff" opacity=".08"/><rect x="70" y="14" width="57.3" height="26" rx="6" fill="#2DD4BF"/><text x="0" y="75" class="mb" fill="#fff">Top-5</text><rect x="70" y="56" width="236" height="26" rx="6" fill="#ffffff" opacity=".08"/><rect x="70" y="56" width="116.6" height="26" rx="6" fill="#34D399"/><text x="0" y="117" class="mb" fill="#fff">Top-10</text><rect x="70" y="98" width="236" height="26" rx="6" fill="#ffffff" opacity=".08"/><rect x="70" y="98" width="145.7" height="26" rx="6" fill="#A3E635"/></g>
 </svg>
