@@ -1,0 +1,4 @@
+Number		Dims		Class Data
+0		(64, 64, 3)		b'pomegranate' (class index: 170 - id: b'n07768694')
+1		(64, 64, 3)		b'miniskirt, mini' (class index: 77 - id: b'n03770439')
+2		(64, 64, 3)		b'German shepherd, German shepherd dog, German police dog, alsatian' (class index: 11 - id: b'n02106662')
