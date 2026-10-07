@@ -7,3 +7,6 @@ img_data/
 
 CNN_TinyImageNet.h5
 
+
+# Profiler traces and TensorBoard logs (large, regenerated on every run)
+log_data/
