@@ -29,7 +29,7 @@ Iowa State University · CprE 487/587 · Lab 1 · Team 06
 | Team | 2 — Zach Dixon, Jongwoo Kim |
 | This repository | My re-run of the whole lab from the course template, checked step by step against the handout. The earlier team notebook is kept in `previous_lab_data/` |
 | Stack | Python 3.9, TensorFlow/Keras 2.16.2, TensorFlow Datasets, TensorBoard profiler, Jupyter |
-| Deliverables | [Lab 1 report (PDF)](submission/lab1_report_06.pdf) · [Notebook (PDF)](submission/lab1_notebook_06.pdf) · [Notebook (.ipynb)](submission/lab1_notebook_06.ipynb) · [Exported binaries](submission/lab1_binaries_06) |
+| Deliverables | [Lab 1 report (PDF)](submission/lab1_report_06.pdf) · [Notebook (PDF)](submission/lab1_notebook_06.pdf) · [Notebook (.ipynb)](submission/lab1_notebook_06.ipynb) · [Exported binaries](submission/lab1_binaries_06) · [Canvas archive (zip)](submission/lab1_06.zip) |
 | Later labs | [Lab 2 — C++ framework](https://github.com/devjwk/487lab2), [Lab 3 — MAC units](https://github.com/devjwk/487lab3), [Lab 4 — quantization](https://github.com/devjwk/cpre487lab4), [Lab 5 — hardware integration](https://github.com/devjwk/cpre487lab5) |
 
 ## Why
@@ -159,7 +159,7 @@ CprE_487_587_Lab1_Template.ipynb   the notebook, with outputs
 CprE487_587_Lab1.pdf               lab handout
 CNN_TinyImageNet.h5                provided model (wnids.txt, words.txt: class labels)
 model_data/                        exported weights and biases
-submission/                        report PDF, notebook PDF and .ipynb, exported binaries
+submission/                        report PDF, notebook PDF and .ipynb, exported binaries, and lab1_06.zip (report + .ipynb + binaries)
 report_figures/                    figures and TensorBoard screenshots used in the report
 previous_lab_data/                 first team notebook and the analysis of its problems
 assets/                            README banner and figure
