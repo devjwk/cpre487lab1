@@ -5,7 +5,7 @@
 ![Framework](https://img.shields.io/badge/Framework-TensorFlow%202.16-0F766E?style=flat-square&labelColor=042F2E)
 ![Tooling](https://img.shields.io/badge/Tooling-Jupyter%20%C2%B7%20TensorBoard-0D9488?style=flat-square&labelColor=042F2E)
 ![Dataset](https://img.shields.io/badge/Dataset-TinyImageNet%20200-10B981?style=flat-square&labelColor=042F2E)
-![Stage](https://img.shields.io/badge/Stage-Report%20in%20progress-65A30D?style=flat-square&labelColor=042F2E)
+![Stage](https://img.shields.io/badge/Stage-Complete-65A30D?style=flat-square&labelColor=042F2E)
 
 Iowa State University · CprE 487/587 · Lab 1 · Team 06
 
@@ -15,7 +15,7 @@ Iowa State University · CprE 487/587 · Lab 1 · Team 06
 
 ---
 
-> **Where it stands — Experiments complete, report in progress**  
+> **Where it stands — Complete**  
 > Inference, profiling and training of a 12-layer TinyImageNet CNN in TensorFlow, re-run from a clean template.  
 > The model is right one time in four. Convolution takes most of the compute, and one layer, `conv2d_1`, takes most of that.
 
@@ -29,7 +29,7 @@ Iowa State University · CprE 487/587 · Lab 1 · Team 06
 | Team | 2 — Zach Dixon, Jongwoo Kim |
 | This repository | My re-run of the whole lab from the course template, checked step by step against the handout. The earlier team notebook is kept in `previous_lab_data/` |
 | Stack | Python 3.9, TensorFlow/Keras 2.16.2, TensorFlow Datasets, TensorBoard profiler, Jupyter |
-| Deliverables | [Notebook (PDF)](submission/lab1_notebook_06.pdf) · [Notebook (.ipynb)](submission/lab1_notebook_06.ipynb) · [Exported binaries](submission/lab1_binaries_06) · report in progress |
+| Deliverables | [Lab 1 report (PDF)](submission/lab1_report_06.pdf) · [Notebook (PDF)](submission/lab1_notebook_06.pdf) · [Notebook (.ipynb)](submission/lab1_notebook_06.ipynb) · [Exported binaries](submission/lab1_binaries_06) |
 | Later labs | [Lab 2 — C++ framework](https://github.com/devjwk/487lab2), [Lab 3 — MAC units](https://github.com/devjwk/487lab3), [Lab 4 — quantization](https://github.com/devjwk/cpre487lab4), [Lab 5 — hardware integration](https://github.com/devjwk/cpre487lab5) |
 
 ## Why
@@ -159,7 +159,8 @@ CprE_487_587_Lab1_Template.ipynb   the notebook, with outputs
 CprE487_587_Lab1.pdf               lab handout
 CNN_TinyImageNet.h5                provided model (wnids.txt, words.txt: class labels)
 model_data/                        exported weights and biases
-submission/                        notebook PDF and .ipynb, exported binaries (report to be added)
+submission/                        report PDF, notebook PDF and .ipynb, exported binaries
+report_figures/                    figures and TensorBoard screenshots used in the report
 previous_lab_data/                 first team notebook and the analysis of its problems
 assets/                            README banner and figure
 ```
@@ -168,7 +169,6 @@ assets/                            README banner and figure
 
 ## Limitations and next steps
 
-- The report is not finished, so `submission/` does not contain `lab1_report_06.pdf` yet.
 - Each training configuration was run once. Differences under one percentage point between batch sizes are within run-to-run variation.
 - Because early stopping was active, no run went past epoch 12. What happens at very large epoch counts is inferred from the trend, not measured.
 - The notebook was executed in two kernel sessions, so its execution counts are not in one sequence and the first cell shows the GPU session.
