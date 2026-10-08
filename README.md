@@ -172,5 +172,4 @@ assets/                            README banner and figure
 - Each training configuration was run once. Differences under one percentage point between batch sizes are within run-to-run variation.
 - Because early stopping was active, no run went past epoch 12. What happens at very large epoch counts is inferred from the trend, not measured.
 - The notebook was executed in two kernel sessions, so its execution counts are not in one sequence and the first cell shows the GPU session.
-- In the notebook PDF, long code lines are cut off at the right edge of the page.
 - The optional "Above and Beyond" section was not attempted.
